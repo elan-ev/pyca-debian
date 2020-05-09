@@ -1,0 +1,5 @@
+pyca (2.2-1) unstable; urgency=medium
+
+  * Initial packaging
+
+ -- Sven Haardiek <sven@haardiek.de>  Fri, 08 May 2020 17:13:52 +0200

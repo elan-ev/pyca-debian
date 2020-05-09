@@ -1,0 +1,11 @@
+--- a/init/systemd/pyca-ui.service
++++ b/init/systemd/pyca-ui.service
+@@ -6,7 +6,7 @@
+ [Service]
+ Type=simple
+ User=pyca
+-ExecStart=/usr/bin/gunicorn pyca.ui:app
++ExecStart=/usr/bin/gunicorn3 pyca.ui:app
+ Restart=always
+ RestartSec=10
+ 

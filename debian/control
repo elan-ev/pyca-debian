@@ -1,0 +1,17 @@
+Source: pyca
+Section: misc
+Priority: optional
+Maintainer: Sven Haardiek <sven@haardiek.de>
+Build-Depends: debhelper (>=11~), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.1.4
+Homepage: https://github.com/opencast/pyCA
+
+Package: pyca
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${python3:Depends}, gunicorn3
+Recommends: ffmpeg
+Description: Opencast Capture Agent
+ PyCA is a fully functional Opencast capture agent written in Python. It is
+ free software licensed under the terms of the GNU Lesser General Public
+ License.
