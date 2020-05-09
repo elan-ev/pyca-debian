@@ -10,7 +10,7 @@ version=4
 #opts="pgpsigurlmangle=s%$%.sig%"
 
 # GitHub hosted projects
-opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%<project>-$1.tar.gz%" \
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%pyca-$1.tar.gz%" \
    https://github.com/opencast/pyca/tags \
    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
 
