@@ -29,4 +29,7 @@ cp -r debian ../pyca/
     debuild -tc -us -uc
 )
 
-printf "\nSuccess. You find your brand new packages under '..'\n"
+mkdir -p build
+cp ../*.deb ../*.buildinfo ../*.changes ../*.debian.tar.xz ../*.dsc ../*.orig.tar.gz build
+
+printf "\nSuccess. You find your brand new packages under 'build'\n"
