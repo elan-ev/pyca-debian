@@ -4,8 +4,11 @@ set -e
 set -u
 
 # Install the dependencies
-mk-build-deps
-dpkg -i pyca-build-deps_*.deb || apt-get install -y -f
+if [ "${INSTALL_DEPENDENCIES:-n}" = y ]
+then
+    mk-build-deps
+    dpkg -i pyca-build-deps_*.deb || apt-get install -y -f
+fi
 
 # Download source
 uscan --download-current
