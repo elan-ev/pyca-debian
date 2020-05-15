@@ -5,13 +5,13 @@ set -u
 
 REPO_NAME=pyca
 
-TMP=$(mktemp -d aptly-XXXXX)
+TMP=$(mktemp -d /tmp/aptly-XXXXX)
 function finish {
   rm -rf "$TMP"
 }
 trap finish EXIT
 
-echo "{\"rootDir\": \"$TMP/.aptly\"}" > "$TMP/.aptly.conf"
+echo "{\"rootDir\": \"$TMP/.aptly\",\"architectures\": [\"all\", \"source\"]}" > "$TMP/.aptly.conf"
 aptly "-config=$TMP/.aptly.conf" repo create "$REPO_NAME"
 aptly "-config=$TMP/.aptly.conf" repo add "$REPO_NAME" build/*{.deb,dsc}
 aptly "-config=$TMP/.aptly.conf" publish repo -distribution=buster "$REPO_NAME" "$REPO_NAME"
