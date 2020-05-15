@@ -40,7 +40,8 @@ jobs:
       - run: git checkout gh-pages || git checkout -b gh-pages
       - run: git rm --cached -r .
       - run: gpg1 --armor --export > gpg.key
-      - run: git add pyca .circleci gpg.key
+      - run: echo pyca.deb.opencast.org > CNAME
+      - run: git add pyca .circleci gpg.key CNAME
       - run: git commit -m "Create Repository"
       - run: git push --force origin gh-pages
 
