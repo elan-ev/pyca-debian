@@ -1,4 +1,23 @@
-# Debian Packaging for pyCA
+# Debian Packaging for PyCA
+
+## Using the Repository
+
+You can install PyCA from the APT repository by executing the following steps:
+
+```bash
+# Install prerequisites
+apt-get install apt-transport-https
+
+# Include PyCA's Signing Key
+apt-key adv --fetch https://elan-ev.github.io/pyca-debian/gpg.key
+
+# Add the Repository
+echo "deb [arch=all] https://elan-ev.github.io/pyca-debian/pyca buster main" > /etc/apt/sources.list.d/pyca.list
+
+# Update your cache and install PyCA
+apt-get update
+apt-get install pyca
+```
 
 ## Build the package
 
@@ -12,4 +31,4 @@ If you would like to look in the process in more details, take a look into the s
 ## Create a repository
 
 There is also a small script in this repository to create a Debian Repository using [aptly](https://www.aptly.info/).
-It is mostly intented to be used with the CI, but if you want to use it manually, you will need to habe a GPG key to sign the repository with.
+It is mostly indented to be used with the CI, but if you want to use it manually, you will need to have a [GPG](https://gnupg.org/) to sign the repository with.
