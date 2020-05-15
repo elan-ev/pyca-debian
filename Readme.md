@@ -9,10 +9,10 @@ You can install PyCA from the APT repository by executing the following steps:
 apt-get install apt-transport-https
 
 # Include PyCA's Signing Key
-apt-key adv --fetch https://elan-ev.github.io/pyca-debian/gpg.key
+apt-key adv --fetch https://pyca.deb.opencast.org/gpg.key
 
 # Add the Repository
-echo "deb [arch=all] https://elan-ev.github.io/pyca-debian/pyca buster main" > /etc/apt/sources.list.d/pyca.list
+echo "deb [arch=all] https://pyca.deb.opencast.org/pyca buster main" > /etc/apt/sources.list.d/pyca.list
 
 # Update your cache and install PyCA
 apt-get update
