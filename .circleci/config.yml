@@ -39,7 +39,8 @@ jobs:
       - run: git config --global user.name "CI"
       - run: git checkout gh-pages || git checkout -b gh-pages
       - run: git rm --cached -r .
-      - run: git add pyca .circleci
+      - run: gpg1 --armor --export > gpg.key
+      - run: git add pyca .circleci gpg.key
       - run: git commit -m "Create Repository"
       - run: git push --force origin gh-pages
 
