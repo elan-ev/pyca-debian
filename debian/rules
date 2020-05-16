@@ -6,11 +6,7 @@
 export PYBUILD_NAME=pyca
 
 %:
-	dh $@ --with python3 --buildsystem=pybuild
-
-override_dh_clean:
-	dh_clean -O--buildsystem=pybuild
-	rm -rf .eggs/
+	dh $@ --buildsystem=pybuild
 
 # Although it would be nice to test here, it is not worth manually installing
 # the runtime dependencies

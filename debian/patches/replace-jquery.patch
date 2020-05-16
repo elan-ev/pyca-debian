@@ -1,0 +1,6 @@
+--- a/MANIFEST.in
++++ b/MANIFEST.in
+@@ -1,2 +1,3 @@
+ include pyca/ui/static/*
+ include pyca/ui/templates/*
++exclude pyca/ui/static/jquery.min.js
