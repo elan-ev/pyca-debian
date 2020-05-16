@@ -2,8 +2,8 @@ Source: pyca
 Section: misc
 Priority: optional
 Maintainer: Sven Haardiek <sven@haardiek.de>
-Build-Depends: debhelper (>=11~), dh-python, python3-all, python3-setuptools
-Standards-Version: 4.1.4
+Build-Depends: debhelper (>=11~), dh-python, python3-all, python3-setuptools, debhelper-compat (= 12), dh-sequence-python3
+Standards-Version: 4.3.0
 Homepage: https://github.com/opencast/pyCA
 
 Package: pyca
