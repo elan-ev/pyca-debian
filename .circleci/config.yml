@@ -41,7 +41,7 @@ jobs:
       - run: git rm --cached -r .
       - run: gpg1 --armor --export > gpg.key
       - run: echo pyca.deb.opencast.org > CNAME
-      - run: git add pyca .circleci gpg.key CNAME
+      - run: git add opencast-pyca .circleci gpg.key CNAME
       - run: git commit -m "Create Repository"
       - run: git push --force origin gh-pages
 
