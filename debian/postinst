@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for pyca
+# postinst script for opencast-pyca
 #
 # see: dh_installdeb(1)
 

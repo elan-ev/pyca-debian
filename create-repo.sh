@@ -3,7 +3,7 @@
 set -e
 set -u
 
-REPO_NAME=pyca
+REPO_NAME=opencast-pyca
 
 TMP=$(mktemp -d /tmp/aptly-XXXXX)
 function finish {

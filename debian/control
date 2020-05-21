@@ -1,4 +1,4 @@
-Source: pyca
+Source: opencast-pyca
 Section: misc
 Priority: optional
 Maintainer: Sven Haardiek <sven@haardiek.de>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>=11~), dh-python, python3-all, python3-setuptools, de
 Standards-Version: 4.3.0
 Homepage: https://github.com/opencast/pyCA
 
-Package: pyca
+Package: opencast-pyca
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${python3:Depends}, gunicorn3

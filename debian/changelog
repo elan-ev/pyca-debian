@@ -1,19 +1,5 @@
-pyca (2.2-3) unstable; urgency=medium
-
-  * Use jquery from the system
-  * Remove compat and add debhelper-compat to build dependencies
-  * Raise Standard-Version
-
- -- Sven Haardiek <sven@haardiek.de>  Sat, 16 May 2020 16:44:31 +0200
-
-pyca (2.2-2) unstable; urgency=medium
-
-  * Use split service files
-
- -- Sven Haardiek <sven@haardiek.de>  Fri, 15 May 2020 14:11:23 +0200
-
-pyca (2.2-1) unstable; urgency=medium
+opencast-pyca (2.2-1) unstable; urgency=medium
 
   * Initial packaging
 
- -- Sven Haardiek <sven@haardiek.de>  Fri, 08 May 2020 17:13:52 +0200
+ -- Sven Haardiek <sven@haardiek.de>  Thu, 21 May 2020 10:19:38 +0200

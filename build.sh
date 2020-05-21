@@ -7,7 +7,7 @@ set -u
 if [ "${INSTALL_DEPENDENCIES:-n}" = y ]
 then
     mk-build-deps
-    dpkg -i pyca-build-deps_*.deb || apt-get install -y -f
+    dpkg -i opencast-pyca-build-deps_*.deb || apt-get install -y -f
 fi
 
 # Download source
@@ -16,16 +16,16 @@ uscan --download-current
 # Extract upstream sources
 (
     cd ..
-    mkdir -p pyca
-    tar xf pyca_*.orig.tar.gz --strip-components 1 -C pyca
+    mkdir -p opencast-pyca
+    tar xf opencast-pyca_*.orig.tar.gz --strip-components 1 -C opencast-pyca
 )
 
 # Copy debian directory
-cp -r debian ../pyca/
+cp -r debian ../opencast-pyca/
 
 # Build
 (
-    cd ../pyca
+    cd ../opencast-pyca
     debuild -tc -us -uc
 )
 

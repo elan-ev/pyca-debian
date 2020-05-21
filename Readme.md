@@ -12,11 +12,11 @@ apt-get install apt-transport-https
 apt-key adv --fetch https://pyca.deb.opencast.org/gpg.key
 
 # Add the Repository
-echo "deb [arch=all] https://pyca.deb.opencast.org/pyca buster main" > /etc/apt/sources.list.d/pyca.list
+echo "deb [arch=all] https://pyca.deb.opencast.org/opencast-pyca buster main" > /etc/apt/sources.list.d/opencast-pyca.list
 
 # Update your cache and install PyCA
 apt-get update
-apt-get install pyca
+apt-get install opencast-pyca
 ```
 
 ## Build the package
