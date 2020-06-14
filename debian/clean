@@ -1,1 +1,5 @@
 .eggs/
+node_modules/
+pyca/ui/static/*
+false/
+.cache/
