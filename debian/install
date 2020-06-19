@@ -1,2 +1,2 @@
-init/systemd/pyca-schedule.service init/systemd/pyca-capture.service init/systemd/pyca-ingest.service init/systemd/pyca-agentstate.service init/systemd/pyca-ui.service lib/systemd/system/
-etc/pyca.conf etc/
+init/systemd/* lib/systemd/system/
+etc/* etc/pyca/

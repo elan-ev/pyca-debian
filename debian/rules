@@ -11,3 +11,8 @@ export PYBUILD_NAME=pyca
 # Although it would be nice to test here, it is not worth manually installing
 # the runtime dependencies
 override_dh_auto_test:
+
+override_dh_auto_build:
+	npm ci --no-cache
+	npm run build
+	dh_auto_build --buildsystem=pybuild
