@@ -32,3 +32,9 @@ If you would like to look in the process in more details, take a look into the s
 
 There is also a small script in this repository to create a Debian Repository using [aptly](https://www.aptly.info/).
 It is mostly indented to be used with the CI, but if you want to use it manually, you will need to have a [GPG](https://gnupg.org/) to sign the repository with.
+
+## Bump Version
+
+```sh
+DEBFULLNAME="Jane Doe" DEBEMAIL="jdoe@example.com" dch -v 3.2-1 -D unstable "New upstream Release"
+```
