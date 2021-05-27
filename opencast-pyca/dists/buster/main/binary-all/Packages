@@ -1,0 +1,22 @@
+Package: opencast-pyca
+Priority: optional
+Section: misc
+Installed-Size: 713
+Maintainer: Sven Haardiek <sven@haardiek.de>
+Architecture: all
+Version: 4.3-1
+Depends: python3-configobj, python3-dateutil, python3-flask, python3-psutil, python3-pycurl, python3-sdnotify, python3-sqlalchemy, python3:any, python3-gunicorn
+Recommends: ffmpeg
+Filename: pool/main/o/opencast-pyca/opencast-pyca_4.3-1_all.deb
+Size: 149476
+MD5sum: 51059df8c367a0b78dbe7dba121c3330
+SHA1: 951adea9fa9b026463339252fb41dd012dd222c3
+SHA256: a74ae27268b3f1bbaddf0674071945b98a54508d191d5927de53b218c5b1efc7
+SHA512: 703df0f502bad0f6bfa85baa0a68f725258d72d84639cef287672d3c2754c299e44c584b05c54e6a03a025e468e9871cff82f618c218c59c97c4e95177dbdee3
+Description: Opencast Capture Agent
+ PyCA is a fully functional Opencast capture agent written in Python. It is
+ free software licensed under the terms of the GNU Lesser General Public
+ License.
+Multi-Arch: foreign
+Homepage: https://github.com/opencast/pyCA
+

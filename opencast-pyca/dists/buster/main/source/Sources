@@ -1,0 +1,30 @@
+Package: opencast-pyca
+Binary: opencast-pyca
+Version: 4.3-1
+Maintainer: Sven Haardiek <sven@haardiek.de>
+Build-Depends: debhelper (>= 11~), dh-python, python3-all, python3-setuptools, debhelper-compat (= 12), dh-sequence-python3, npm
+Architecture: all
+Standards-Version: 4.3.0
+Format: 3.0 (quilt)
+Directory: pool/main/o/opencast-pyca
+Files:
+ c5672345223de86adbc00a3f4cf2055c 3156 opencast-pyca_4.3-1.debian.tar.xz
+ 13fe030196d1acf1504a613fc5e97fcd 988 opencast-pyca_4.3-1.dsc
+ b294c60570690d666f97965de12c4499 127920 opencast-pyca_4.3.orig.tar.gz
+Checksums-Sha256:
+ dce382c4c891a17a64f28107682b5f1432d4bbef23d21ae924f6e9ee0e9ce602 3156 opencast-pyca_4.3-1.debian.tar.xz
+ 39bc80fc04fc2abe3cef6d3b141098e6a46d448ad08dc2f3edd4216c4568e9e0 988 opencast-pyca_4.3-1.dsc
+ c9cd278b9188fd0620c8c67c96ab4903637f87bc7ec057cb8cf24167c0dfea19 127920 opencast-pyca_4.3.orig.tar.gz
+Package-List:
+ opencast-pyca deb misc optional arch=all
+Checksums-Sha512:
+ afebf85de4df74305bfd0e499dc3a7b2eb188ac79598b3ab0df50de91ed53a97e7a3c00a0b4b768ee6687f2060703d08b5ab2218147e4ba9b50c50f83610b0ce 3156 opencast-pyca_4.3-1.debian.tar.xz
+ 4d137d4d8a6945bd1c83a2c1249e613f1ff59e292488a404859e0bfbbc49e968148e8db9a5a59866631a7f1ebb46b11e3574d90c663dab07c83d5135da37ae81 988 opencast-pyca_4.3-1.dsc
+ 41d6b8bd811a12e3a71549967028994cc6506860fb49398123cd54cf54743d0fd0a37bacd0405c90bb3f70752a9f75883112b1fbaf85ce4d69127f05576a067e 127920 opencast-pyca_4.3.orig.tar.gz
+Uploaders: Lars Kiesow <lkiesow@uos.de>
+Checksums-Sha1:
+ 7e37b50c4df7941f272ccc999915f1721412c07a 3156 opencast-pyca_4.3-1.debian.tar.xz
+ 335a41abe73862866738ebbd24dbaa5d220888e9 988 opencast-pyca_4.3-1.dsc
+ c5ab970834a7f078ec6cdc7cd107cfe64cddbe51 127920 opencast-pyca_4.3.orig.tar.gz
+Homepage: https://github.com/opencast/pyCA
+
