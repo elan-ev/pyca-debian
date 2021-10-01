@@ -1,5 +1,8 @@
 # Debian Packaging for PyCA
 
+[![CircleCI](https://img.shields.io/circleci/build/gh/elan-ev/pyca-debian)
+](https://app.circleci.com/pipelines/github/elan-ev/pyca-debian)
+
 ## Using the Repository
 
 You can install PyCA from the APT repository by executing the following steps:

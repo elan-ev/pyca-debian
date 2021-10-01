@@ -1,3 +1,9 @@
+opencast-pyca (4.4-1) unstable; urgency=medium
+
+  * New upstream Release
+
+ -- Lars Kiesow <lkiesow@uos.de>  Fri, 01 Oct 2021 17:08:22 +0200
+
 opencast-pyca (4.3-1) unstable; urgency=medium
 
   * New upstream Release
