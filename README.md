@@ -1,23 +1,23 @@
-# Debian Packaging for PyCA
+# Debian Packaging for pyCA
 
 [![CircleCI](https://img.shields.io/circleci/build/gh/elan-ev/pyca-debian)
 ](https://app.circleci.com/pipelines/github/elan-ev/pyca-debian)
 
 ## Using the Repository
 
-You can install PyCA from the APT repository by executing the following steps:
+You can install pyCA from the APT repository by executing the following steps:
 
 ```bash
 # Install prerequisites
 apt-get install apt-transport-https
 
-# Include PyCA's Signing Key
+# Include pyCA's Signing Key
 apt-key adv --fetch https://pyca.deb.opencast.org/gpg.key
 
 # Add the Repository
 echo "deb [arch=all] https://pyca.deb.opencast.org/opencast-pyca buster main" > /etc/apt/sources.list.d/opencast-pyca.list
 
-# Update your cache and install PyCA
+# Update your cache and install pyCA
 apt-get update
 apt-get install opencast-pyca
 ```
