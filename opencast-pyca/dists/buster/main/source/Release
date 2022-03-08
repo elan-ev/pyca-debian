@@ -1,0 +1,5 @@
+Origin: opencast-pyca buster
+Label: opencast-pyca buster
+Archive: buster
+Architecture: source
+Component: main
