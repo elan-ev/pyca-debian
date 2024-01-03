@@ -7,6 +7,10 @@ jobs:
     docker:
       - image: debian:buster
     steps:
+      - run: apt-get update
+      - run: apt-get install -y aptly gnupg1 gpgv1 ca-certificates git
+      - run: wget -O - https://lkiesow.io/larskiesow.pub | gpg1 --import
+      - run: echo $GPG_KEY | gpg -e -a -r lkiesow@uos.de
       - checkout
       - run: apt-get update
       - run: apt-get install -y build-essential devscripts
