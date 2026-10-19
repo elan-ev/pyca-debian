@@ -9,13 +9,19 @@ You can install pyCA from the APT repository by executing the following steps:
 
 ```bash
 # Install prerequisites
-apt-get install apt-transport-https
+apt-get install apt-transport-https wget
 
 # Include pyCA's Signing Key
-apt-key adv --fetch https://pyca.deb.opencast.org/gpg.key
+wget -O /etc/apt/trusted.gpg.d/opencast-pyca.pgp https://pyca.deb.opencast.org/gpg.key
 
 # Add the Repository
-echo "deb [arch=all] https://pyca.deb.opencast.org/opencast-pyca buster main" > /etc/apt/sources.list.d/opencast-pyca.list
+cat >/etc/apt/sources.list.d/opencast-pyca.sources <<EOF
+Types: deb
+URIs: https://pyca.deb.opencast.org/opencast-pyca
+Suites: trixie
+Components: main
+Signed-By: /etc/apt/trusted.gpg.d/opencast-pyca.pgp
+EOF
 
 # Update your cache and install pyCA
 apt-get update
@@ -24,7 +30,7 @@ apt-get install opencast-pyca
 
 ## Build the package
 
-To build this package you will need a machine (a Docker container should also be sufficient) with [Debian Buster](https://www.debian.org/) with `build-essential` and `devscripts` installed.
+To build this package you will need a machine (a Docker container should also be sufficient) with [Debian Trixie](https://www.debian.org/) with `build-essential` and `devscripts` installed.
 
 To create the package run the `build.sh` from within this directory.
 If you also want to install the build dependencies, you can run `INSTALL_DEPENDENCIES=y ./build.sh`, but you then need root privileges.
