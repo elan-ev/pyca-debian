@@ -10,7 +10,11 @@ jobs:
       - checkout
       - run: apt-get update
       - run: apt-get install -y build-essential devscripts
-      - run: INSTALL_DEPENDENCIES=y ./build.sh
+      - run: >-
+          EMAIL=ci@circleci
+          NAME=CI
+          INSTALL_DEPENDENCIES=y
+          ./build.sh
       - persist_to_workspace:
           root: build
           paths:
