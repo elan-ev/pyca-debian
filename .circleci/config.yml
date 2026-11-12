@@ -26,7 +26,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - 26:a8:a9:e5:94:f1:79:13:88:2a:c7:74:2f:c3:06:fd
+            - SHA256:RGl4LgcdPkKrxQapHCZAGmih+Gvvg/XfAr51lFzDgpE
       - run: apt-get update
       - run: apt-get install -y aptly gnupg1 gpgv1 ca-certificates git
       - run: echo $GPG_KEY | base64 -d | gpg1 --import
